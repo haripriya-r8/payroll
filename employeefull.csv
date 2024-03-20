@@ -1,0 +1,14 @@
+id,name,designation,department,month,year,base,leavedays,tax,nightshift
+101,Pradeep,PM,DevOps,1,2010,1395000,5000,279000,No
+102,Haripriya,Junior,BA,1,2020,687500,2500,68750,Yes
+103,Ashutosh,TL,Dev,8,2021,957500,2500,143625,No
+104,Shruthi,Architect,Dev,8,2021,857500,2500,85750,No
+105,Karuna,Architect,QA,3,2023,799000,1000,79900,No
+106,Bhuvana,TL,Release,4,2022,946000,4000,141900,Yes
+107,Patrick,Senior,Dev,4,2023,765500,4500,76550,Yes
+108,Irfan,Architect,QA,4,2020,695500,4500,69550,Yes
+109,Ravi,PM,Junior,9,2017,1250000,2500,45000,No
+110,Saku,Senior,Dev,3,2024,667500,2500,66750,Yes
+111,Ben,Senior,BA,4,2024,688500,1500,68850,No
+123,Hridhay,Senior,Dev,4,2024,667500,2500,66750,No
+124,Akshaya,Junior,BA,4,2024,788500,1500,78850,NULL
