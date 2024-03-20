@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View Salary</title>
+<style>
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2d1441; /* Dark purple */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column; /* Center elements vertically */
+  }
+
+
+  .container {
+      text-align: center;
+  }
+
+
+  .input-container {
+      margin-bottom: 20px;
+  }
+
+
+  .input-text {
+      width: calc(100% - 22px); /* Adjusted width to accommodate border */
+      padding: 10px;
+      border: 1px solid #e3b8ff; /* Pastel purple border */
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: #f0e8ff; /* Pastel purple background */
+      color: #2d1441; /* Dark purple text */
+  }
+
+
+  .submit-button {
+      padding: 15px 60px; /* Adjusted padding for better proportion */
+      font-size: 18px;
+      background-color: #e3b8ff; /* Pastel purple */
+      color: #2d1441; /* Dark purple text */
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .submit-button:hover {
+      background-color: #d8a7ff; /* Darker shade for hover */
+  }
+
+
+  .submit-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+
+
+  h1 {
+      color: #e3b8ff; /* Pastel purple */
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+  }
+
+
+  p, label {
+      display: none; /* Hide labels */
+  }
+</style>
+</head>
+<body>
+
+
+<form action="PrintEmployeeRecordsServlet" class="container">
+  <h1 class="heading">View All Employee's Details</h1>
+ 
+  <button class="submit-button">View</button>
+</form>
+
+
+</body>
+</html>
+
+

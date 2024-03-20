@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send payslip in mail</title>
+<style>
+    body {
+        margin: 0;
+        font-family: FreeMono, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #2d1441; /* Dark purple background */
+    }
+
+
+    h1 {
+        text-align: center;
+        margin: 50px 0 20px; /* Adjusted margin */
+        color:  #e3b8ff; /* Pastel purple *//* Adjust color to contrast with background */
+    }
+
+
+    input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e3b8ff; /* Pastel purple border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0e8ff; /* Pastel purple background */
+    color: #2d1441; /* Dark purple text */
+  }
+
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #9623c0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+    input[type="submit"]:hover {
+        background-color: #801faa;
+    }
+</style>
+</head>
+<body>
+
+
+<h1>Send payslip in mail</h1>
+
+
+<form action="MailServlet" method="post">
+    <input type="text" name="name" placeholder="Employee's Name" required>
+    <br>
+    <input type="email" name="email" placeholder="Employee's Mail Address" required>
+    <br>
+   
+   
+    <input type="submit" value="Send payslip PDF in mail">
+</form>
+
+
+</body>
+</html>

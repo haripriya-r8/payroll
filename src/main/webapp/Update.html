@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Employee Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2d1441; /* Dark purple */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        .container {
+            text-align: center;
+        }
+
+
+        input[type="text"] {
+            width: calc(100% - 22px); /* Adjusted width to accommodate border */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e3b8ff; /* Pastel purple border */
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #f0e8ff; /* Pastel purple background */
+            color: #2d1441; /* Dark purple text */
+        }
+
+
+        button[type="submit"] {
+            padding: 15px 60px; /* Adjusted padding for better proportion */
+            margin-top: 20px;
+            font-size: 18px;
+            background-color: #e3b8ff; /* Pastel purple */
+            color: #2d1441; /* Dark purple text */
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        button[type="submit"]:hover {
+            background-color: #d8a7ff; /* Darker shade for hover */
+        }
+
+
+        button[type="submit"]:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+
+
+     p, label {
+            display: none;
+        }
+       
+  h1 {
+    color: #e3b8ff; /* Pastel purple */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Update Employee Details</h1>
+    <form action="Update" method="post">
+        <input type="text" id="employeeId" name="employeeId" placeholder="Employee ID" required><br>
+  
+		<input type="text" id="name" name="name" placeholder="Name" required><br>
+		
+        <input type="text" id="designation" name="designation" placeholder="Designation" required><br>
+       
+        <input type="text" id="department" name="department" placeholder="Department" required><br>
+       
+        <input type="text" id="month" name="month" placeholder="Month" required><br>
+       
+        <input type="text" id="year" name="year" placeholder="Year" required><br>
+       
+        <input type="text" id="leaveDays" name="leaveDays" placeholder="Number of leave days in this month" required><br>
+       
+        <input type="text" id="nightShift" name="nightShift" placeholder="Night shift(Yes/No)" required><br>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d1441; /* Dark purple */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .container {
+    text-align: center;
+  }
+
+
+  .button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #e3b8ff; /* Pastel purple */
+    color: #2d1441; /* Dark purple text */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .button:hover {
+    background-color: #d8a7ff; /* Darker shade for hover */
+  }
+
+
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+
+
+  h1 {
+    color: #e3b8ff; /* Pastel purple */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+
+  p {
+    color: #e3b8ff; /* Pastel purple */
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <h1>Welcome to Payroll Portal!</h1>
+  <p>Please select your user type:</p>
+  <button class="button" onclick="redirectToLogin('admin')">Administrator</button>
+  <button class="button" onclick="redirectToLogin('employee')">Employee</button>
+</div>
+
+
+<script>
+  function redirectToLogin(userType) {
+    if (userType === 'admin') {
+      window.location.href = 'AdminLoginApproval.html'; // Redirect to login.html for admin
+    } else if (userType === 'employee') {
+      // Add logic to redirect to employee page if needed
+      window.location.href = 'EmployeeLoginApproval.html';
+    }
+  }
+</script>
+
+
+</body>
+</html>
+
+

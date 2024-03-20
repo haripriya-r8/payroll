@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+</head>
+<body>
+    <h1>Employee Information Form</h1>
+    <form action="AddEmployeeServlet" method="post">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" name="employeeId" required><br><br>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required><br><br>
+
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" required><br><br>
+
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

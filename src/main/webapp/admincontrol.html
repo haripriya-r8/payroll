@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Control</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d1441; /* Dark purple */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .container {
+    text-align: center;
+  }
+
+
+  .button {
+    padding: 15px 10px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #e3b8ff; /* Pastel purple */
+    color: #2d1441; /* Dark purple text */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure buttons are displayed as block elements */
+    width: 80%; /* Set width to 80% of parent container */
+    max-width: 300px; /* Limit maximum width */
+    margin: 10px auto; /* Center horizontally */
+  }
+
+
+  .button:hover {
+    background-color: #d8a7ff; /* Darker shade for hover */
+  }
+
+
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+
+
+  h1 {
+    color: #e3b8ff; /* Pastel purple */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+
+  p {
+    color: #e3b8ff; /* Pastel purple */
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <h1>Select an Action</h1>
+  <button class="button" onclick="redirectToLogin('add')">Add Employee Details</button>
+   
+  <button class="button" onclick="redirectToLogin('update')">Update Employee Details</button>
+  
+  <button class="button" onclick="redirectToLogin('print')">Print All employees details</button>
+  <button class="button" onclick="redirectToLogin('pdf')">PDF Generation</button>
+  <button class="button" onclick="redirectToLogin('payslip')">Send Payslip to Mail</button>
+</div>
+
+
+<script>
+  function redirectToLogin(userType) {
+    if (userType === 'add') {
+      window.location.href = 'salaryenter.html'; // Redirect to login.html for admin
+    }
+    
+    
+    else if (userType === 'update') {
+      window.location.href = 'Update.html';
+    }
+    
+    else if (userType === 'print') {
+      window.location.href = 'PrintAllEmployeeDetails.html';
+    }
+    
+     else if (userType === 'pdf') {
+      window.location.href = 'pdfgeneration.html';
+    } 
+    else if (userType === 'payslip') {
+      window.location.href = 'SendMail.html';
+    }
+  }
+</script>
+
+
+</body>
+</html>
