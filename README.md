@@ -4,45 +4,57 @@ Payroll System
 Done by:Haripriya R
 
   Workflow explanation:
-      1)Form submission using HTML:All the details are fetched from the user using
-      html form.CSS was used to enhance style and javascript was used to check
+      1)Form submission using HTML:All the details are fetched from the user using html form.CSS was used to enhance style and javascript was used to check
       validity.
-      2)Servlet to interact with database:Servlet files written in java were used to get
-      details from the html form,perform necessary manipulations and store it in the
+      
+      2)Servlet to interact with database:Servlet files written in java were used to get details from the html form,perform necessary manipulations and store it in the
       database.SQL queries were also employed to take care of database maintenance.
+      
       3)SQL database:SQL database was used to store employee details.
+      
   Database:
       ● Database name:payrollnew
       ● Table name:employeefull
+      
   User roles and functions:
     Home page:
       ● Home.html
+      
     Login Approval:
       ● Admin:AdminLoginApproval.html
       ● Employee:EmployeeloginApproval.html
+
     Admin functions:
       Add employee details:
         ● HTML:salaryenter.html
         ● Servlet:salarycalculationservlet.java
+        
       Update employee details:
         ● HTML:update.html
         ● Servlet:update.java
+        
       Print all employee details:
         ● HTML:PrintAllEmployeeDetails.html
         ● Servlet:PrintEmployeeRecords.java
+        
       Pdf generation:
         ● HTML:pdfgeneration.html
         ● Servlet:payslipservlet.java
+        
       Send payslip to mail:
         ● HTML:SendMail.html
         ● Servlet:MailServlet.java
+        
     Employee functions:
       View details:
         ● HTML:ViewDetailsEmp.html
         ● Servlet:ViewDetailsEmp.java
+        
       View salary:
         ● HTML:ViewSalary.html
         ● Servlet:SeeSalary.java
+
+        
   Explanation:
     The payroll system is developed using HTML,CSS,Javascript for frontend and Java and SQL for backend.Tomcat server was deployed to host local server.
     The payroll system consists of 2 user options-Administrator and Employee.Administrator has 5 functions namely adding employee details,updating employee
